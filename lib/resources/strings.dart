@@ -16,4 +16,5 @@ class Strings {
   static const String postBloodGroup = "Kan Grubu";
   static const String postHospital = "Hastane";
   static const String postDescription = "Detaylar";
+  static const String postButton = "İncele";
 }
