@@ -46,7 +46,7 @@ class Post extends StatelessWidget {
                 title: Strings.postHospital,
                 value: description,
               ),
-              SizedBox(height: 14),
+              const SizedBox(height: 14),
               Container(
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
