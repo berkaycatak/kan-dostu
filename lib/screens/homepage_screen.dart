@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kandostu/components/edited_card.dart';
+import 'package:kandostu/resources/images.dart';
 import 'package:kandostu/resources/strings.dart';
 
 class HomePageScreen extends StatefulWidget {
@@ -51,7 +52,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                 const AddPost(),
                 const SizedBox(height: 15),
                 const Text(
-                  "İhtiyaç Duyuruları",
+                  Strings.postsTitle,
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 17,
@@ -110,7 +111,7 @@ class AddPost extends StatelessWidget {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  "Bağış İhtiyacı Duyur",
+                  Strings.donateNeeds,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.surface,
                     fontWeight: FontWeight.w500,
@@ -153,7 +154,7 @@ class SearchDonor extends StatelessWidget {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  "Bağışçı Ara",
+                  Strings.searchDonor,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.secondary,
                     fontWeight: FontWeight.w500,
@@ -188,7 +189,7 @@ class Post extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Bağış ihtiyacı",
+                Strings.needingDonor,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.w500,
@@ -197,18 +198,18 @@ class Post extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               PostField(
-                imagePath: "assets/images/blood.png",
+                imagePath: Images.blood,
                 title: Strings.postBloodGroup,
                 value: bloodGroup,
               ),
               const SizedBox(height: 14),
               PostField(
-                  imagePath: "assets/images/hospital.png",
+                  imagePath: Images.hospital,
                   title: Strings.postHospital,
                   value: hospital),
               const SizedBox(height: 14),
               PostField(
-                imagePath: "assets/images/description.png",
+                imagePath: Images.description,
                 title: Strings.postHospital,
                 value: description,
               ),

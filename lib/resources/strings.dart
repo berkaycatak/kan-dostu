@@ -7,7 +7,12 @@ class Strings {
   static String homePageWelcome(name) => "Hoş geldin $name";
   static const String homePageWelcomeDetail = "\nSağlıklı günler dileriz!";
 
+  static const String postsTitle = "İhtiyaç Duyuruları";
+  static const String donateNeeds = "Bağış İhtiyacı Duyur";
+  static const String searchDonor = "Bağışçı Ara";
+
   // post texts
+  static const String needingDonor = "Bağış İhtiyacı";
   static const String postBloodGroup = "Kan Grubu";
   static const String postHospital = "Hastane";
   static const String postDescription = "Detaylar";
