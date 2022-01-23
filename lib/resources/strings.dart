@@ -1,4 +1,6 @@
 class Strings {
+  static const String appName = "Kan Dostu!";
+
   static const String welcomeMessage = "Bağışçı Ol!\nBağışçılara Ulaş!";
   static const String welcomeMessageDetail =
       "Çevrende kan bağışına mı ihtiyaç var?\nBağışçıları gör, talebini paylaş ve insanlara ulaş!";
@@ -17,4 +19,8 @@ class Strings {
   static const String postHospital = "Hastane";
   static const String postDescription = "Detaylar";
   static const String postButton = "İncele";
+
+  static const String homepage = "Anasayfa";
+  static const String search = "Ara";
+  static const String myProfile = "Profilim";
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kandostu/components/edited_appbar.dart';
 import 'package:kandostu/components/edited_card.dart';
 import 'package:kandostu/components/post_card.dart';
 import 'package:kandostu/resources/strings.dart';
@@ -14,6 +15,32 @@ class _HomePageScreenState extends State<HomePageScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const EditedAppBar(),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: Strings.homepage,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: Strings.search,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle),
+            label: Strings.myProfile,
+          ),
+        ],
+        currentIndex: 0,
+        selectedItemColor: Colors.amber[800],
+        onTap: (value) {
+          if (value == 1) {
+            Navigator.pushNamed(context, '/search');
+          } else if (value == 2) {
+            Navigator.pushNamed(context, '/profile');
+          }
+        },
+      ),
       backgroundColor: const Color(0xFFE5E5E5),
       body: SafeArea(
         child: SingleChildScrollView(
