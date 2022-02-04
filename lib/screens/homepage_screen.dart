@@ -91,18 +91,24 @@ class _HomePageScreenState extends State<HomePageScreen> {
                   bloodGroup: 'A RH+',
                   description:
                       'Hasta şurada burada şöyle föyle böyle töyle işte ondan sonra şu olursa bu böyle olur.',
+                  owner: 0,
+                  id: 1,
                 ),
                 const Post(
                   hospital: 'Maltepe Devlet Hastanesi',
                   bloodGroup: 'A RH+',
                   description:
                       'Çok acil kan gerekiyor lütfen en kısa sürede ulaşın',
+                  owner: 1,
+                  id: 2,
                 ),
                 const Post(
                   hospital: 'Kızılay Hastanesi',
                   bloodGroup: 'A RH+',
                   description:
                       'Çok acil kan gerekiyor lütfen en kısa sürede ulaşın',
+                  owner: 0,
+                  id: 3,
                 ),
               ],
             ),

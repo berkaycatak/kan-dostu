@@ -18,7 +18,11 @@ class Strings {
   static const String postBloodGroup = "Kan Grubu";
   static const String postHospital = "Hastane";
   static const String postDescription = "Detaylar";
-  static const String postButton = "İncele";
+
+  static const String postShowButton = "İncele";
+  static const String postEditButton = "Düzenle";
+  static const String postDeleteButton = "Sil";
+  static const String postSendButton = "İlan Gönder";
 
   static const String homepage = "Anasayfa";
   static const String search = "Ara";

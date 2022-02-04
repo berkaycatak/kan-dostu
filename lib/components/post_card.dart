@@ -5,12 +5,15 @@ import 'package:kandostu/resources/strings.dart';
 
 class Post extends StatelessWidget {
   final String bloodGroup, hospital, description;
-  const Post(
-      {Key? key,
-      required this.bloodGroup,
-      required this.hospital,
-      required this.description})
-      : super(key: key);
+  final int owner, id;
+  const Post({
+    Key? key,
+    required this.bloodGroup,
+    required this.hospital,
+    required this.description,
+    required this.owner,
+    required this.id,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -47,25 +50,88 @@ class Post extends StatelessWidget {
                 value: description,
               ),
               const SizedBox(height: 20),
-              Container(
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Theme.of(context).colorScheme.primary,
-                ),
-                child: const Padding(
-                  padding:
-                      EdgeInsets.only(left: 15, right: 15, bottom: 13, top: 13),
-                  child: Text(
-                    Strings.postButton,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
+              owner == 0
+                  ? Container(
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.only(
+                            left: 15, right: 15, bottom: 13, top: 13),
+                        child: Text(
+                          Strings.postShowButton,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    )
+                  : Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 3.5,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                          child: const Padding(
+                            padding: EdgeInsets.only(
+                                left: 15, right: 15, bottom: 13, top: 13),
+                            child: Text(
+                              Strings.postShowButton,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width / 3.5,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Theme.of(context).colorScheme.surface,
+                          ),
+                          child: const Padding(
+                            padding: EdgeInsets.only(
+                                left: 15, right: 15, bottom: 13, top: 13),
+                            child: Text(
+                              Strings.postEditButton,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width / 3.5,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Theme.of(context).colorScheme.secondary,
+                          ),
+                          child: const Padding(
+                            padding: EdgeInsets.only(
+                                left: 15, right: 15, bottom: 13, top: 13),
+                            child: Text(
+                              Strings.postDeleteButton,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                ),
-              ),
             ],
           ),
         ),
