@@ -6,7 +6,7 @@ class Strings {
       "Çevrende kan bağışına mı ihtiyaç var?\nBağışçıları gör, talebini paylaş ve insanlara ulaş!";
   static const String registerButton = "Kayıt Ol";
   static const String loginButton = "Giriş Yap";
-  static String homePageWelcome(name) => "Hoş geldin $name";
+  static String homePageWelcome(name) => "Merhaba $name";
   static const String homePageWelcomeDetail = "\nSağlıklı günler dileriz!";
 
   static const String postsTitle = "İhtiyaç Duyuruları";

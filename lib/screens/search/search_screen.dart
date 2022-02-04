@@ -14,7 +14,7 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFE5E5E5),
+      backgroundColor: const Color(0xFFEEEEF3),
       appBar: const EditedAppBar(),
       body: SingleChildScrollView(
         child: Padding(

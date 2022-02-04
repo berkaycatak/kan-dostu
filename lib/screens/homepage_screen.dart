@@ -41,7 +41,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
           }
         },
       ),
-      backgroundColor: const Color(0xFFE5E5E5),
+      backgroundColor: const Color(0xFFEEEEF3),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -77,7 +77,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                 const SearchDonor(),
                 const SizedBox(height: 10),
                 const AddPost(),
-                const SizedBox(height: 15),
+                const SizedBox(height: 20),
                 const Text(
                   Strings.postsTitle,
                   style: TextStyle(

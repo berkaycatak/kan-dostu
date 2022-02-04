@@ -46,7 +46,7 @@ class Post extends StatelessWidget {
                 title: Strings.postHospital,
                 value: description,
               ),
-              const SizedBox(height: 14),
+              const SizedBox(height: 20),
               Container(
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
@@ -55,7 +55,7 @@ class Post extends StatelessWidget {
                 ),
                 child: const Padding(
                   padding:
-                      EdgeInsets.only(left: 15, right: 15, bottom: 10, top: 10),
+                      EdgeInsets.only(left: 15, right: 15, bottom: 13, top: 13),
                   child: Text(
                     Strings.postButton,
                     textAlign: TextAlign.center,
